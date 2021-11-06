@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <svg display='none'>
+        <symbol id="telegram" viewBox="0 0 21 19">
+            <path
+                d="M8.45497 18.2125V12.5356L16.0675 5.68828L6.09046 11.4236L1.24609 8.96563L20.1045 1.41602L16.9903 18.2125L10.7041 14.5254L8.45497 18.2125Z"
+                 stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="wk"  viewBox="0 0 25 16">
+            <path
+                d="M12.3992 14.7496H13.7833C13.7833 14.7496 14.187 14.691 14.4177 14.4569C14.5907 14.2228 14.5907 13.8132 14.5907 13.8132C14.5907 13.8132 14.5907 11.8819 15.4558 11.6478C16.3208 11.3552 17.4166 13.462 18.57 14.2814C19.4351 14.9251 20.1271 14.7496 20.1271 14.7496L23.2413 14.691C23.2413 14.691 24.8561 14.574 24.1064 13.2864C24.0487 13.1694 23.645 12.2915 21.7996 10.5358C19.8388 8.66304 20.1271 9.01418 22.434 5.79535C23.8757 3.86406 24.4524 2.63505 24.2794 2.16686C24.1064 1.69866 23.0683 1.81571 23.0683 1.81571H19.5504C19.5504 1.81571 19.262 1.75719 19.089 1.87423C18.916 1.99128 18.8007 2.2839 18.8007 2.2839C18.8007 2.2839 18.224 3.80553 17.4742 5.09306C15.9171 7.78518 15.2827 7.96075 15.0521 7.78518C14.4754 7.37551 14.5907 6.20502 14.5907 5.38569C14.5907 2.7521 14.9944 1.69866 13.841 1.40604C13.4373 1.28899 13.2066 1.23047 12.2262 1.23047C10.9574 1.23047 9.91935 1.23047 9.28497 1.52309C8.88127 1.69866 8.59291 2.16686 8.76593 2.16686C8.99661 2.16686 9.51565 2.34243 9.80401 2.69357C10.15 3.16177 10.15 4.33225 10.15 4.33225C10.15 4.33225 10.3807 7.43403 9.68866 7.78518C9.22729 8.0778 8.53525 7.49256 7.15114 5.03454C6.45909 3.80553 5.88238 2.40095 5.88238 2.40095C5.88238 2.40095 5.82471 2.22538 5.59402 2.10833C5.36334 1.93276 5.07498 1.87423 5.07498 1.87423H1.73007C1.73007 1.87423 1.21103 1.87423 1.03802 2.10833C0.865002 2.2839 1.03802 2.69357 1.03802 2.69357C1.03802 2.69357 3.63321 8.89714 6.6321 12.0574C9.34264 14.9836 12.3992 14.7496 12.3992 14.7496Z"
+                 stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 13 25">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M3.4794 18.3452C3.4794 16.5895 3.4794 14.8337 3.4794 13.078C3.4794 12.7854 3.42172 12.6684 3.13337 12.7269C2.61433 12.7269 2.03762 12.7269 1.51858 12.7269C1.2879 12.7269 1.23022 12.6684 1.23022 12.4343C1.23022 11.3223 1.23022 10.2689 1.23022 9.1569C1.23022 8.9228 1.2879 8.86428 1.51858 8.86428C2.09529 8.86428 2.61433 8.86428 3.19104 8.86428C3.53707 8.86428 3.59474 8.74723 3.59474 8.45461C3.59474 7.63527 3.59474 6.81593 3.59474 5.93807C3.59474 4.94316 3.88309 3.94825 4.4598 3.12891C5.20952 2.07548 6.30527 1.60728 7.51636 1.54876C8.78512 1.49023 10.0539 1.54876 11.3226 1.49023C11.4957 1.49023 11.5533 1.54876 11.5533 1.72433C11.5533 2.83629 11.5533 3.94825 11.5533 5.06021C11.5533 5.23578 11.4957 5.29431 11.3226 5.29431C10.6883 5.29431 10.1116 5.29431 9.47717 5.29431C8.66978 5.29431 8.15074 5.70398 8.09307 6.52331C8.0354 7.16708 8.09307 7.86937 8.09307 8.51314C8.09307 8.74723 8.20841 8.74723 8.38143 8.74723C9.30416 8.74723 10.2269 8.74723 11.1496 8.74723C11.438 8.74723 11.4957 8.80576 11.4957 9.09838C11.3803 10.2103 11.265 11.3223 11.2073 12.3757C11.2073 12.6098 11.092 12.6684 10.8613 12.6684C10.1115 12.6684 9.36183 12.6684 8.66978 12.6684C8.15074 12.6684 8.20841 12.6098 8.20841 13.1365C8.20841 16.5895 8.20841 19.9839 8.20841 23.4368C8.20841 23.7879 8.09307 23.905 7.74704 23.905C6.47828 23.905 5.20952 23.905 3.94076 23.905C3.59473 23.905 3.53706 23.7879 3.53706 23.4953C3.47939 21.7981 3.4794 20.0424 3.4794 18.3452Z"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 23 24">
+            <path
+                d="M15.2102 22.5531H7.36699C3.79139 22.5531 0.907837 19.6269 0.907837 15.9984V8.03908C0.907837 4.41058 3.79139 1.48438 7.36699 1.48438H15.2102C18.7858 1.48438 21.6694 4.41058 21.6694 8.03908V15.9984C21.6694 19.6269 18.7858 22.5531 15.2102 22.5531Z"
+                 stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M11.2886 16.7007C13.8367 16.7007 15.9023 14.6045 15.9023 12.0187C15.9023 9.43297 13.8367 7.33679 11.2886 7.33679C8.74054 7.33679 6.67493 9.43297 6.67493 12.0187C6.67493 14.6045 8.74054 16.7007 11.2886 16.7007Z"
+                 stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M17.0557 6.63442C17.4698 6.63442 17.8055 6.29379 17.8055 5.87361C17.8055 5.45342 17.4698 5.11279 17.0557 5.11279C16.6417 5.11279 16.306 5.45342 16.306 5.87361C16.306 6.29379 16.6417 6.63442 17.0557 6.63442Z"
+                 stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+    </svg>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="#" class="header__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <div class="header__right">
+                        <div class="header__right-btn">
+                            <a href="#">Шторы Cortin</a>
+                        </div>
+                        <nav class="header__right-nav">
+                            <a href="#" class="header__right-nav__link">Где купить?</a>
+                            <a href="#" class="header__right-nav__link">Дилерам</a>
+                            <a href="#" class="header__right-nav__link">Дизайн студиям</a>
+                            <a href="#" class="header__right-nav__link">Контакты</a>
+                        </nav>
+                        <a href="#" class="header__phone">
+                            <img src="img/phone.png" alt="">
+                        </a>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__wrapper">
+                    <div class="gallery__item">
+                        <h2 class="gallery__item-title">
+                            ИНДВИДУАЛЬНОЕ<br>
+                            ИЗГОТОВЛЕНИЕ ШТОР
+                        </h2>
+                        <div class="gallery__item-text">
+                            8 видов систем, более 1000 видов тканей,
+                            и множество дополнительных возможностей позволяют создать реально уникальную и уютную атмосферу в
+                            вашем доме
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallery__item-img">
+                            <img src="img/gallery-1.png" alt="">
+                        </div>
+                        <a href="#" class="gallery__item-link">римские шторы</a>
+                    </div>
+                    <div class="gallery__item">
+                        <a href="#" class="gallery__item-link">австрийские шторы</a>
+                        <div class="gallery__item-img">
+                            <img src="img/gallery-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallery__item-img">
+                            <img src="img/gallery-3.png" alt="">
+                        </div>
+                        <a href="#" class="gallery__item-link">французские шторы</a>
+                    </div>
+                    <div class="gallery__item">
+                        <a href="#" class="gallery__item-link">лондонские шторы</a>
+                        <div class="gallery__item-img">
+                            <img src="img/gallery-4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <div class="gallery__item-img">
+                            <img src="img/gallery-5.png" alt="">
+                        </div>
+                        <a href="#" class="gallery__item-link">прямые шторы</a>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__circle">
+                <img src="img/gallery-circle.png" alt="">
+            </div>
+        </section>
+        <section class="conditions">
+            <div class="container">
+                <h1 class="section__title conditions__title">
+                    ПРЕДЛАГАЕМ УДОБНЫЕ<br>
+                    УСЛОВИЯ ДЛЯ ДИЛЕРОВ
+                </h1>
+                <div class="conditions__subtitle">С нами более 500 партнёров</div>
+                <div class="conditions__wrapper">
+                    <div class="conditions__item">
+                        <div class="conditions__item-img">
+                            <img src="img/conditions-1.png" alt="">
+                        </div>
+                        <div class="conditions__item-text">
+                            Телеграм канал, где мы
+                            делимся опытом (новые изделия,
+                            акции, обучающий контент)
+                        </div>
+                    </div>
+                    <div class="conditions__item">
+                        <div class="conditions__item-img">
+                            <img src="img/conditions-2.png" alt="">
+                        </div>
+                        <div class="conditions__item-text">
+                            Профессиональные
+                            менеджеры и электронный
+                            документооборот
+                        </div>
+                    </div>
+                    <div class="conditions__item">
+                        <div class="conditions__item-img">
+                            <img src="img/conditions-3.png" alt="">
+                        </div>
+                        <div class="conditions__item-text">
+                            Предоставляем контент
+                            для интернет-магазинов
+                            (фото, рендеры)
+                        </div>
+                    </div>
+                    <div class="conditions__item">
+                        <div class="conditions__item-img">
+                            <img src="img/conditions-4.png" alt="">
+                        </div>
+                        <div class="conditions__item-text">
+                            Собственные каталоги
+                            для каждого типа изделия
+                        </div>
+                    </div>
+                </div>
+                <form action="#" class="conditions__form">
+                    <input placeholder="Телефон" type="text" class="conditions__form-input">
+                    <button class="conditions__form-button" type="button">Стать дилером</button>
+                </form>
+            </div>
+        </section>
+        <section class="design">
+            <div class="container">
+                <h1 class="section__title">А ТАКЖЕ ДЛЯ ДИЗАЙН СТУДИЙ</h1>
+                <div class="design__wrapper">
+                    <div class="design__item">
+                        <div class="design__item-text">
+                            Регулярное
+                            добавление
+                            новинок
+                        </div>
+                        <img src="img/design-1.png" alt="" class="design__item-img">
+                    </div>
+                    <div class="design__item">
+                        <div class="design__item-text">
+                            Эксклюзивные
+                            решения
+                        </div>
+                        <img src="img/design-2.png" alt="" class="design__item-img">
+                    </div>
+                    <div class="design__item">
+                        <div class="design__item-text">
+                            Современные
+                            каталоги
+                        </div>
+                        <img src="img/design-3.png" alt="" class="design__item-img">
+                    </div>
+                </div>
+                <a href="#" class="design__link">
+                    <span class="design__link-text">Условия для дизайн студий</span>
+                    <img src="img/design-link.png" alt="" class="design__link-icon">
+                </a>
+            </div>
+        </section>
+        <section class="buy">
+            <div class="container">
+                <div class="buy__wrapper">
+                    <div class="buy__left">
+                        <h2 class="buy__left-title">
+                            КУПИТЬ НАШИ<br>
+                            ИЗДЕЛИЯ МОЖНО
+                        </h2>
+                        <div class="buy__left-text">
+                            В магазинах нашей дилерской<br>
+                            сети в вашем городе
+                        </div>
+                        <div class="buy__left-btn">
+                            <a href="#">Найти магазин</a>
+                        </div>
+                    </div>
+                    <div class="buy__right">
+                        <div class="buy__right-top">
+                            <div class="buy__right-top__left">
+                                <img src="img/buy-right-1.png" alt="">
+                                <div class="buy__right-top__left-text">
+                                    Солнцезащитные<br>
+                                    системы
+                                </div>
+                            </div>
+                            <div class="buy__right-top__right">
+                                <img src="img/buy-right-2.svg" alt="">
+                                <div class="buy__right-top__right-text">
+                                    Интернет-магазин<br>
+                                    жалюзт рулонных штор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buy__right-bottom">
+                            <div class="buy__right-bottom__item">
+                                <img src="img/buy-right-3.png" alt="">
+                            </div>
+                            <div class="buy__right-bottom__item">
+                                <img src="img/buy-right-3.png" alt="">
+                            </div>
+                            <div class="buy__right-bottom__item">
+                                <img src="img/buy-right-3.png" alt="">
+                            </div>
+                            <div class="buy__right-bottom__item">
+                                <img src="img/buy-right-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <footer class="footer">
+                <div class="footer__wrapper">
+                    <div class="footer__item">
+                        <div class="container">
+                            <nav class="footer__item-menu footer__item-menu-first">
+                                <a href="#" class="footer__item-menu__link">Римские шторы</a>
+                                <a href="#" class="footer__item-menu__link">Австрйиские шторы</a>
+                                <a href="#" class="footer__item-menu__link">Французские шторы</a>
+                                <a href="#" class="footer__item-menu__link">Прямые шторы</a>
+                                <a href="#" class="footer__item-menu__link">Лондонские шторы</a>
+                            </nav>
+                            <a href="#" class="footer__item-logo">
+                                <img src="img/footer-logo.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="container">
+                            <nav class="footer__item-menu">
+                                <a href="#" class="footer__item-menu__link">Дилерам</a>
+                                <a href="#" class="footer__item-menu__link">Дизайн студиям</a>
+                                <a href="#" class="footer__item-menu__link">Контакты</a>
+                                <a href="#" class="footer__item-menu__link">Политика ОПД</a>
+                                <a href="#" class="footer__item-menu__link">Дизайн в Студии Вилкина</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer__item">
+                        <div class="container">
+                            <a href="#" class="footer__item-phone">
+                                + 8 (800) 555-45-75
+                            </a>
+                            <a href="#" class="footer__item-info">
+                                Г. Севастополь, Фиолентовское шоссе 1/2
+                            </a>
+                            <a href="#" class="footer__item-info">cortin@info</a>
+                            <div class="footer__item-socials">
+                                <a href="#" class="footer__item-socials__item">
+                                    <svg class="footer__item-socials__item-icon">
+                                        <use xlink:href="#telegram"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__item-socials__item">
+                                    <svg class="footer__item-socials__item-icon">
+                                        <use xlink:href="#wk"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__item-socials__item">
+                                    <svg class="footer__item-socials__item-icon">
+                                        <use xlink:href="#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__item-socials__item">
+                                    <svg class="footer__item-socials__item-icon">
+                                        <use xlink:href="#instagram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
